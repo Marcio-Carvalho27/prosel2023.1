@@ -1,0 +1,310 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "OpenSansBold", sans-serif;
+    font-weight: normal;
+}
+
+
+
+li, ul {
+    list-style: none;
+    margin-bottom: 10px;
+    color: #c9c9c9;
+}
+
+a:link, a:visited{
+    color: #c9c9c9;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: #170E0F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icon{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 28px;
+    top: 5px;
+}
+
+.logo{
+    position: absolute;
+    width: 123px;
+    height: 59px;
+    left: 113px;
+    top: 1px;
+}
+
+.profile{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 1175px;
+    top: 5px;
+
+}
+
+#divBusca{
+    position: absolute;
+    width: 800px;
+    height: 38px;
+    left: 278px;
+    top: 11px;
+
+    background: #D9D9D9;
+    border-radius: 25px;
+}
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-top: 2px;
+    padding-left:55px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+}
+
+
+  
+.elementos {
+    top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-top: 70px;
+    padding-bottom: 10px;
+    color: #c9c9c9;
+    font-weight: 700;
+    font-size: 20px;
+    
+    background: #735542;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #ffffff;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slider {
+    display: block;
+
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.ci {
+    box-shadow: 0px 4px 11px 8px rgba(0, 0, 0, 0.5);
+
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider li {
+    position: absolute;
+}
+
+
+.sobre{
+    position: absolute;
+    width: 174px;
+    left: 550px;
+    top: 701px;
+
+    color: #212121;
+    font-weight: 400;
+    font-size: 32px;
+
+
+    color: #4a4a4a;;
+}
+
+.sobre1{
+
+    width: fit-content;
+    
+    margin-left: 490px;
+
+
+    color: #212121;
+    font-weight: 400;
+    font-size: 32px;
+    
+
+    color: #4a4a4a;
+
+    padding-bottom: 50px;
+}
+
+.texto {
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 700px;
+    text-align:justify;
+
+
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4a4a4a;
+}
+ 
+.banners {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#rodape {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.titulo {
+    width: 80px;
+    height: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.box2 {
+    padding-top: 75px;
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+
+    background: #261617;
+}
+
+.modal, .modal2, .modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+}
+  
+.modal-content, .modal-content2, .modal-content3 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+
+}
+ 
+.close, .close2, .close3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close2:hover, .close3:hover, .close:focus, .close2:focus, .close3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background-color: none;
+}
+.modal-img {
+    width: 1000px;
+}
+
+.modal-text {
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+
+    text-align:justify;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4a4a4a;
+}
+
+.modal-titulo {
+    margin-top: 20px;
+    margin-left: 300px;
+
+    margin-bottom: 10px;
+
+
+
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+    font-size: 30px;
+    line-height: 30px;
+    color: #4a4a4a; 
+}
